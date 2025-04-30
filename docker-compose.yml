@@ -11,18 +11,7 @@ services:
 
   
 
-  backend:
-    build: ./backend
-    ports:
-      - "3000:3000"
-    container_name: backend
-
-  frontend:
-    build: ./frontend
-    ports:
-      - "5173:5173" # ou 3001:3000 se quiser mudar
-    depends_on:
-      - backend
+  
 
 
 volumes:
